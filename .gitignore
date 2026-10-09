@@ -1,0 +1,59 @@
+# Python and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments and credentials
+.env
+.env.*
+.venv/
+venv/
+*.pem
+*.key
+.netrc
+
+# Editor and assistant state
+.idea/
+.vscode/
+.claude/
+.DS_Store
+*~
+*.swp
+
+# Model weights and runtime output
+models/
+checkpoints/
+reward_ckpts/
+logs/
+wandb/
+swanlog/
+.swanlab/
+evaluation_output/
+evaluation_output_after/
+inference_output/
+inference_output_sd3/
+opd_output/
+.cache/
+*.log
+*.err
+*.pt
+*.pth
+*.safetensors
+
+# Local third-party checkouts
+mmcv/
+mmdetection/
+HPSv2/
+
+# Local exemplar media and private manifests
+*.mp4
+*.mov
+*.webm
+/dataset/ood/*.json
+!/dataset/ood/schema.json

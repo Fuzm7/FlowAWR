@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GraftSet-Video exemplar manifest",
+  "description": "Map each prompt to its exemplar records. Every prompt must have exactly config.sample.n_ood_per_prompt records, ordered by reward descending. Video files are supplied separately.",
+  "type": "object",
+  "minProperties": 1,
+  "patternProperties": {
+    "^.+$": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["video_path", "reward", "model_name"],
+        "properties": {
+          "video_path": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local video path accessible to the training process. Relative paths are resolved from the launch directory."
+          },
+          "reward": {"type": "number"},
+          "model_name": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}
