@@ -298,13 +298,14 @@ torchrun --nproc_per_node=8 scripts/eval/inference_wan2_1.py \
 
 FlowAWR builds on [DiffusionNFT](https://github.com/NVlabs/DiffusionNFT) and [Flow-GRPO](https://github.com/yifan123/flow_grpo), with model and training components from [Diffusers](https://github.com/huggingface/diffusers) and [PEFT](https://github.com/huggingface/peft). Please retain upstream license notices and consult [LICENSE](LICENSE).
 
-If you use FlowAWR, please cite the manuscript. The entry below intentionally omits unannounced publication identifiers and venue information:
+If you use FlowAWR, please cite:
 
 ```bibtex
-@misc{fu_flowawr,
-  title = {FlowAWR: Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification},
-  author = {Fu, Zheming and He, Ruizhe and Shang, Wei and Ma, Xiaoxiao and Wang, Lei and Liu, Chang and Fu, Siming},
-  note = {Manuscript}
+@article{fu2026flowawr,
+  title={FlowAWR: Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification},
+  author={Fu, Zheming and He, Ruizhe and Shang, Wei and Ma, Xiaoxiao and Wang, Lei and Liu, Chang and Fu, Siming},
+  journal={arXiv preprint arXiv:2606.30376},
+  year={2026}
 }
 ```
 
