@@ -309,10 +309,23 @@ If you use FlowAWR, please cite:
 }
 ```
 
-For the video extensions, also cite the corresponding work when its public bibliographic entry is available:
+For the video extensions, please also cite the corresponding work:
 
-- **VideoAWR: Reinforcing Video Flow Models with Decoupled-Timestep Advantage-Weighted Rectification**
-- **GraftOOD: Grafting Out-of-Distribution Exemplars into Advantage-Weighted Rectification for Video Reward Optimization**
+```bibtex
+@article{fu2026videoawr,
+  title={VideoAWR: Reinforcing Video Flow Models with Decoupled-Timestep Advantage-Weighted Rectification},
+  author={Fu, Zheming and Ning, Wenbin and He, Ruizhe and Shang, Wei and Ma, Xiaoxiao and Mu, Lianrui and Liu, Chang and Wang, Lei and Fu, Siming},
+  journal={arXiv preprint arXiv:2610.13338},
+  year={2026}
+}
+
+@article{fu2026graftood,
+  title={GraftOOD: Grafting Out-of-Distribution Exemplars into Advantage-Weighted Rectification for Video Reward Optimization},
+  author={Fu, Zheming and He, Ruizhe and Ning, Wenbin and Ma, Xiaoxiao and Yang, Xuan and Mu, Lianrui and Huang, Haoyang and Liu, Chang and Wang, Lei and Fu, Siming},
+  journal={arXiv preprint arXiv:2610.13470},
+  year={2026}
+}
+```
 
 Upstream DiffusionNFT reference:
 
