@@ -7,7 +7,8 @@ setup(
         f"flow_grpo.{name}"
         for name in find_namespace_packages(
             where="flow_grpo",
-            exclude=["assets", "assets.*", "reward-server", "reward-server.*", "*__pycache__*"],
+            exclude=["assets", "assets.*", "reward-server", "reward-server.*",
+                     "HPSv3", "HPSv3.*", "videoalign", "videoalign.*", "*__pycache__*"],
         )
     ],
     package_data={"flow_grpo": ["assets/object_names.txt"]},

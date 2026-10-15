@@ -78,6 +78,8 @@ The configurations and image evaluation/inference scripts read these environment
 
 ### Reward Preparation
 
+For HPSv3 and VideoAlign HTTP rewards, see [Reward services](server/README.md) for the separate server environment, model paths, and Ray launch commands. These pickle-based services are restricted to trusted internal clients; VideoAlign also requires shared video paths.
+
 #### Checkpoints
 
 Download reward checkpoints to `reward_ckpts/`:
@@ -186,7 +188,7 @@ torchrun --nproc_per_node=8 scripts/eval/evaluation_multi.py \
 
 Training script: [`scripts/train_wan2_1_awr.py`](scripts/train_wan2_1_awr.py). Configuration: [`config/wan.py`](config/wan.py), `wan_awr_hpsv3_ultraflash` (1.3B) or `wan_awr_hpsv3_ultraflash_14b` (14B).
 
-Set `WAN_MODEL` for a local Wan2.1-1.3B directory or `WAN_14B_MODEL` for 14B; otherwise the configurations use the official Hugging Face identifiers. Provide a trusted HPSv3 service compatible with [`flow_grpo/rewards.py`](flow_grpo/rewards.py); the client uses pickle-encoded HTTP payloads. Server launch instructions will be provided separately.
+Set `WAN_MODEL` for a local Wan2.1-1.3B directory or `WAN_14B_MODEL` for 14B; otherwise the configurations use the official Hugging Face identifiers. Provide a trusted HPSv3 service compatible with [`flow_grpo/rewards.py`](flow_grpo/rewards.py); the client uses pickle-encoded HTTP payloads. See [Reward services](server/README.md) for the independent environment, local model preparation, and Ray launch instructions.
 
 ```bash
 export REWARD_VIDEO_HPSV3_URL="http://YOUR_REWARD_HOST:PORT"
@@ -255,7 +257,7 @@ The manifest format is defined in [`dataset/ood/schema.json`](dataset/ood/schema
 
 Training script: [`scripts/train_wan2_1_awr_ood.py`](scripts/train_wan2_1_awr_ood.py). Configuration: [`config/wan.py`](config/wan.py), `wan_awr_hpsv3_flash_ood`.
 
-Set `WAN_MODEL` to use a local Wan2.1-1.3B directory and provide a trusted HPSv3 service compatible with [`flow_grpo/rewards.py`](flow_grpo/rewards.py). Server launch instructions will be provided separately. The example retains the paper's exemplar-prompt ratio and online-reward scaling:
+Set `WAN_MODEL` to use a local Wan2.1-1.3B directory and provide a trusted HPSv3 service compatible with [`flow_grpo/rewards.py`](flow_grpo/rewards.py). See [Reward services](server/README.md) for the independent environment, local model preparation, and Ray launch instructions. The example retains the paper's exemplar-prompt ratio and online-reward scaling:
 
 ```bash
 export REWARD_VIDEO_HPSV3_URL="http://YOUR_REWARD_HOST:PORT"
