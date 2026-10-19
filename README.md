@@ -1,12 +1,12 @@
 <h1 align="center">FlowAWR</h1>
 <p align="center"><strong>Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification</strong></p>
 <p align="center">Reward-guided flow regression for image generation, with VideoAWR and GraftOOD extensions for video generation.</p>
-<p align="center">
-  <a href="https://arxiv.org/abs/2606.30376">FlowAWR · arXiv</a> ·
-  <a href="https://arxiv.org/abs/2610.13338v1">VideoAWR · arXiv</a> ·
-  <a href="https://arxiv.org/abs/2610.13470">GraftOOD · arXiv</a> ·
-  <a href="https://huggingface.co/datasets/simuler/GraftSet-Video/tree/main">GraftSet-Video · Dataset</a>
-</p>
+<div align="center">
+  <a href="https://arxiv.org/abs/2606.30376"><img src="https://img.shields.io/badge/FlowAWR-arXiv-red?logo=arxiv" alt="FlowAWR paper on arXiv"></a> &nbsp;
+  <a href="https://arxiv.org/abs/2610.13338v1"><img src="https://img.shields.io/badge/VideoAWR-arXiv-red?logo=arxiv" alt="VideoAWR paper on arXiv"></a> &nbsp;
+  <a href="https://arxiv.org/abs/2610.13470"><img src="https://img.shields.io/badge/GraftOOD-arXiv-red?logo=arxiv" alt="GraftOOD paper on arXiv"></a> &nbsp;
+  <a href="https://huggingface.co/datasets/simuler/GraftSet-Video/tree/main"><img src="https://img.shields.io/badge/GraftSet--Video-Dataset-blue?logo=huggingface&amp;logoColor=white" alt="GraftSet-Video dataset on Hugging Face"></a>
+</div>
 
 ## Overview
 
