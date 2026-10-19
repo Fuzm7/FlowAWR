@@ -1,6 +1,12 @@
 <h1 align="center">FlowAWR</h1>
 <p align="center"><strong>Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification</strong></p>
 <p align="center">Reward-guided flow regression for image generation, with VideoAWR and GraftOOD extensions for video generation.</p>
+<p align="center">
+  <a href="https://arxiv.org/abs/2606.30376">FlowAWR · arXiv</a> ·
+  <a href="https://arxiv.org/abs/2610.13338v1">VideoAWR · arXiv</a> ·
+  <a href="https://arxiv.org/abs/2610.13470">GraftOOD · arXiv</a> ·
+  <a href="https://huggingface.co/datasets/simuler/GraftSet-Video/tree/main">GraftSet-Video · Dataset</a>
+</p>
 
 ## Overview
 
@@ -251,7 +257,7 @@ Prepare local exemplar videos and a JSON manifest with four records per prompt f
 }
 ```
 
-The manifest format is defined in [`dataset/ood/schema.json`](dataset/ood/schema.json). Each prompt must contain exactly `sample.n_ood_per_prompt` records sorted by descending reward, with videos prepared as 81 frames at 832×480 and 16 fps. Only the schema is included here; GraftSet-Video manifests and videos will be released separately.
+The manifest format is defined in [`dataset/ood/schema.json`](dataset/ood/schema.json). Each prompt must contain exactly `sample.n_ood_per_prompt` records sorted by descending reward, with videos prepared as 81 frames at 832×480 and 16 fps. Only the schema is included in this code repository; download the GraftSet-Video dataset from [Hugging Face](https://huggingface.co/datasets/simuler/GraftSet-Video/tree/main).
 
 ### Training
 
