@@ -5,7 +5,7 @@
   <a href="https://arxiv.org/abs/2606.30376"><img src="https://img.shields.io/badge/FlowAWR-arXiv-red?logo=arxiv" alt="FlowAWR paper on arXiv"></a> &nbsp;
   <a href="https://arxiv.org/abs/2610.13338v1"><img src="https://img.shields.io/badge/VideoAWR-arXiv-red?logo=arxiv" alt="VideoAWR paper on arXiv"></a> &nbsp;
   <a href="https://arxiv.org/abs/2610.13470"><img src="https://img.shields.io/badge/GraftOOD-arXiv-red?logo=arxiv" alt="GraftOOD paper on arXiv"></a> &nbsp;
-  <a href="https://huggingface.co/datasets/simuler/GraftSet-Video/tree/main"><img src="https://img.shields.io/badge/GraftSet--Video-Dataset-blue?logo=huggingface&amp;logoColor=white" alt="GraftSet-Video dataset on Hugging Face"></a>
+  <a href="https://huggingface.co/datasets/simuler/GraftSet-Video"><img src="https://img.shields.io/badge/GraftSet--Video-Dataset-blue?logo=huggingface&amp;logoColor=white" alt="GraftSet-Video dataset on Hugging Face"></a>
 </div>
 
 ## Overview
@@ -257,7 +257,7 @@ Prepare local exemplar videos and a JSON manifest with four records per prompt f
 }
 ```
 
-The manifest format is defined in [`dataset/ood/schema.json`](dataset/ood/schema.json). Each prompt must contain exactly `sample.n_ood_per_prompt` records sorted by descending reward, with videos prepared as 81 frames at 832×480 and 16 fps. Only the schema is included in this code repository; download the GraftSet-Video dataset from [Hugging Face](https://huggingface.co/datasets/simuler/GraftSet-Video/tree/main).
+The manifest format is defined in [`dataset/ood/schema.json`](dataset/ood/schema.json). Each prompt must contain exactly `sample.n_ood_per_prompt` records sorted by descending reward, with videos prepared as 81 frames at 832×480 and 16 fps. Only the schema is included in this code repository; download the GraftSet-Video dataset from [Hugging Face](https://huggingface.co/datasets/simuler/GraftSet-Video).
 
 ### Training
 
